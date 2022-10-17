@@ -1,3 +1,43 @@
+.wrapper {
+  width: 100%;
+  height:100%;
+  background-color: #bfe3dd;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: end;
+  grid-template-areas:
+    ". . graphic graphic graphic"
+    "title title graphic graphic graphic"
+    ". . graphic graphic graphic";
+    padding: 0 48px;
+}
+
+.title {
+  font-family: 'Fredoka One';
+  color: #201e30;
+  font-size: 4em;
+  align-self: center;
+  grid-area: title;
+  margin: 0;
+}
+
 .highlight {
-  color: #59D7DF;
+  color: #3fda7a;
+}
+
+
+.graphic {
+  align-self: stretch;
+  grid-area: graphic;
 }
